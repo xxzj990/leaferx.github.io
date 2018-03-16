@@ -83,9 +83,9 @@
     
       <category term="教程" scheme="https://leaferx.online/tags/%E6%95%99%E7%A8%8B/"/>
     
-      <category term="git" scheme="https://leaferx.online/tags/git/"/>
-    
       <category term="前端" scheme="https://leaferx.online/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="git" scheme="https://leaferx.online/tags/git/"/>
     
       <category term="bug修复" scheme="https://leaferx.online/tags/bug%E4%BF%AE%E5%A4%8D/"/>
     
@@ -241,9 +241,9 @@
     
       <category term="教程" scheme="https://leaferx.online/tags/%E6%95%99%E7%A8%8B/"/>
     
-      <category term="前端" scheme="https://leaferx.online/tags/%E5%89%8D%E7%AB%AF/"/>
-    
       <category term="Gulp" scheme="https://leaferx.online/tags/Gulp/"/>
+    
+      <category term="前端" scheme="https://leaferx.online/tags/%E5%89%8D%E7%AB%AF/"/>
     
   </entry>
   
