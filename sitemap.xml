@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://leaferx.online/2018/03/16/lc-security-en/</loc>
+    
+    <lastmod>2018-04-22T01:17:37.147Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://leaferx.online/2018/02/11/lc-security/</loc>
+    
+    <lastmod>2018-04-22T01:15:51.711Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://leaferx.online/2018/01/13/SiteUpdate201801/</loc>
     
     <lastmod>2018-03-28T10:32:00.736Z</lastmod>
@@ -23,23 +37,9 @@
   </url>
   
   <url>
-    <loc>https://leaferx.online/2018/03/16/lc-security-en/</loc>
-    
-    <lastmod>2018-03-28T10:31:59.288Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://leaferx.online/2017/04/23/SICP-note-0/</loc>
     
     <lastmod>2018-03-28T10:31:58.841Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://leaferx.online/2018/02/11/lc-security/</loc>
-    
-    <lastmod>2018-03-28T10:31:58.363Z</lastmod>
     
   </url>
   
