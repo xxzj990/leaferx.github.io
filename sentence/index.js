@@ -1,1 +1,11 @@
-"use strict";$(document).ready(function(){$("#fullpage").fullpage({loopBottom:!0,verticalCentered:!1})});var app=new Vue({el:"#fullpage",data:{}});
+$(document).ready(function() {
+    $('#fullpage').fullpage({
+        loopBottom: true,
+        verticalCentered: false
+    });
+});
+
+var app = new Vue({
+    el: "#fullpage",
+    data: {}
+});
