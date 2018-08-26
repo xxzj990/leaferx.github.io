@@ -1,3 +1,4 @@
+https://leaferx.online/2018/08/18/OpenVZLovesAmplify/
 https://leaferx.online/2018/03/17/hexo-auto-open-vscode/
 https://leaferx.online/2018/03/16/lc-security-en/
 https://leaferx.online/2018/02/26/hexo-deploy-error-becauseof-git-credential/
@@ -7,4 +8,3 @@ https://leaferx.online/2018/01/13/SiteUpdate201801/
 https://leaferx.online/2018/01/11/write-for-2018/
 https://leaferx.online/2017/06/17/SiteUpdate201706/
 https://leaferx.online/2017/06/16/use-gulp-to-minimize/
-https://leaferx.online/2017/06/06/MiNLabSys/
