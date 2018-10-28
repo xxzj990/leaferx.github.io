@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://leaferx.online/"/>
-  <updated>2018-08-26T12:26:38.856Z</updated>
+  <updated>2018-10-28T09:53:35.454Z</updated>
   <id>https://leaferx.online/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2018年10月站点更新</title>
+    <link href="https://leaferx.online/2018/10/28/SiteUpdate201810/"/>
+    <id>https://leaferx.online/2018/10/28/SiteUpdate201810/</id>
+    <published>2018-10-28T09:48:34.000Z</published>
+    <updated>2018-10-28T09:53:35.454Z</updated>
+    
+    <content type="html"><![CDATA[<ul><li><p>NexT 主题升级到 v6.4.2</p></li><li><p>因为 spam 评论太多，暂时关闭评论。如需联系，请发邮件<a href="mailto:leaferx@outlook.com" rel="external nofollow noopener noreferrer" target="_blank">leaferx@outlook.com</a></p></li></ul><p>因为最近比较忙碌，几乎没有时间打理博客，所以在最近很长一段时间内博客都可能不会有什么更新（（</p><p># EOF</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;ul&gt;
+&lt;li&gt;&lt;p&gt;NexT 主题升级到 v6.4.2&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;因为 spam 评论太多，暂时关闭评论。如需联系，请发邮件&lt;a href=&quot;mailto:leaferx@outlook.com&quot; rel=&quot;external nofollow noop
+      
+    
+    </summary>
+    
+      <category term="博客通知" scheme="https://leaferx.online/categories/%E5%8D%9A%E5%AE%A2%E9%80%9A%E7%9F%A5/"/>
+    
+      <category term="更新" scheme="https://leaferx.online/categories/%E5%8D%9A%E5%AE%A2%E9%80%9A%E7%9F%A5/%E6%9B%B4%E6%96%B0/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>OpenVZ + 强迫症 + Nginx Amplify</title>
