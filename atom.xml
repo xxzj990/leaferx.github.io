@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://leaferx.online/"/>
-  <updated>2018-10-28T09:53:35.454Z</updated>
+  <updated>2018-10-28T10:25:37.674Z</updated>
   <id>https://leaferx.online/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>让你的 Nginx 在配置文件改变时自动 reload</title>
+    <link href="https://leaferx.online/2018/10/28/nginx-autoreload/"/>
+    <id>https://leaferx.online/2018/10/28/nginx-autoreload/</id>
+    <published>2018-10-28T10:05:14.000Z</published>
+    <updated>2018-10-28T10:25:37.674Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近在重新配置自己的服务器，搭建了 gitea + drones 做 CI/CD。自动部署 Nginx 的配置文件就是其中的一个目标。</p><p>因为我的 Nginx 是以 root 运行的，所以在 reload 的时候一定需要 sudo 权限，如果把 reload 放在 drones 的 CD 过程中，就必须要创建一个具有 nopasswd sudo 权限的账户，并且让 drones ssh 上这个账户运行 reload 命令。</p><p>这样做是十分不安全的，如果有人获得了修改我的配置文件 repo 的权限，或者做到了可以控制 drones，那么他也就自动获得了服务器的 nopassed sudo 权限。所以我决定把配置文件自动部署和 Nginx 自动重载分开，也就是由 root 运行一个 py 脚本监控配置文件夹，在配置文件改变时自动执行 <code>nginx -s reload</code> 命令。</p><a id="more"></a><hr><p>目前这份脚本已经上传至 GitHub：<a href="https://github.com/LEAFERx/nginx-autoreload-service" rel="external nofollow noopener noreferrer" target="_blank">nginx-autoreload-service</a></p><p>脚本使用了 <code>pyinotify</code> 来监视配置文件夹，并且写了一个 <code>.service</code> 文件交给 <code>systemd</code> 做后台守护。</p><p>脚本可以做到命令延时执行，也就是如果在一定时间修改了多份配置文件，延时过后 reload 命令只会执行一次。</p><p>安装及配置方法详见 GitHub README</p><hr><p>在写完这个脚本之后往 GitHub 一搜，就发现了很多类似的脚本，所以也权当练习了，而且那些脚本也不太符合我服务器的实际要求（尤其是延时执行，因为在 git pull 时可能会多次触发事件）。</p><p># EOF</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近在重新配置自己的服务器，搭建了 gitea + drones 做 CI/CD。自动部署 Nginx 的配置文件就是其中的一个目标。&lt;/p&gt;
+&lt;p&gt;因为我的 Nginx 是以 root 运行的，所以在 reload 的时候一定需要 sudo 权限，如果把 reload 放在 drones 的 CD 过程中，就必须要创建一个具有 nopasswd sudo 权限的账户，并且让 drones ssh 上这个账户运行 reload 命令。&lt;/p&gt;
+&lt;p&gt;这样做是十分不安全的，如果有人获得了修改我的配置文件 repo 的权限，或者做到了可以控制 drones，那么他也就自动获得了服务器的 nopassed sudo 权限。所以我决定把配置文件自动部署和 Nginx 自动重载分开，也就是由 root 运行一个 py 脚本监控配置文件夹，在配置文件改变时自动执行 &lt;code&gt;nginx -s reload&lt;/code&gt; 命令。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="后端" scheme="https://leaferx.online/categories/%E5%90%8E%E7%AB%AF/"/>
+    
+      <category term="Nginx" scheme="https://leaferx.online/categories/%E5%90%8E%E7%AB%AF/Nginx/"/>
+    
+    
+      <category term="Nginx" scheme="https://leaferx.online/tags/Nginx/"/>
+    
+      <category term="Python" scheme="https://leaferx.online/tags/Python/"/>
+    
+      <category term="pyinotify" scheme="https://leaferx.online/tags/pyinotify/"/>
+    
+      <category term="systemd" scheme="https://leaferx.online/tags/systemd/"/>
+    
+  </entry>
   
   <entry>
     <title>2018年10月站点更新</title>

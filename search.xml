@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[让你的 Nginx 在配置文件改变时自动 reload]]></title>
+    <url>%2F2018%2F10%2F28%2Fnginx-autoreload%2F</url>
+    <content type="text"><![CDATA[最近在重新配置自己的服务器，搭建了 gitea + drones 做 CI/CD。自动部署 Nginx 的配置文件就是其中的一个目标。 因为我的 Nginx 是以 root 运行的，所以在 reload 的时候一定需要 sudo 权限，如果把 reload 放在 drones 的 CD 过程中，就必须要创建一个具有 nopasswd sudo 权限的账户，并且让 drones ssh 上这个账户运行 reload 命令。 这样做是十分不安全的，如果有人获得了修改我的配置文件 repo 的权限，或者做到了可以控制 drones，那么他也就自动获得了服务器的 nopassed sudo 权限。所以我决定把配置文件自动部署和 Nginx 自动重载分开，也就是由 root 运行一个 py 脚本监控配置文件夹，在配置文件改变时自动执行 nginx -s reload 命令。 目前这份脚本已经上传至 GitHub：nginx-autoreload-service 脚本使用了 pyinotify 来监视配置文件夹，并且写了一个 .service 文件交给 systemd 做后台守护。 脚本可以做到命令延时执行，也就是如果在一定时间修改了多份配置文件，延时过后 reload 命令只会执行一次。 安装及配置方法详见 GitHub README 在写完这个脚本之后往 GitHub 一搜，就发现了很多类似的脚本，所以也权当练习了，而且那些脚本也不太符合我服务器的实际要求（尤其是延时执行，因为在 git pull 时可能会多次触发事件）。 # EOF]]></content>
+      <categories>
+        <category>后端</category>
+        <category>Nginx</category>
+      </categories>
+      <tags>
+        <tag>Nginx</tag>
+        <tag>Python</tag>
+        <tag>pyinotify</tag>
+        <tag>systemd</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[2018年10月站点更新]]></title>
     <url>%2F2018%2F10%2F28%2FSiteUpdate201810%2F</url>
     <content type="text"><![CDATA[NexT 主题升级到 v6.4.2 因为 spam 评论太多，暂时关闭评论。如需联系，请发邮件leaferx@outlook.com 因为最近比较忙碌，几乎没有时间打理博客，所以在最近很长一段时间内博客都可能不会有什么更新（（ # EOF]]></content>
